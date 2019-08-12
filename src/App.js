@@ -1,10 +1,12 @@
 import React from 'react';
+import Screen from './Screen';
+import UserContextProvider from './context';
 
 function App() {
   return (
-    <div className="App">
-      Hello
-    </div>
+    <UserContextProvider>
+      <Screen />
+    </UserContextProvider>
   );
 }
 
